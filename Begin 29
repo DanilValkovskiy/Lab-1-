@@ -1,0 +1,33 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() 
+{
+    // input the data
+    double V1, V2, S, T;
+    cout << "__begin 29__" << endl;
+     // introduction 
+    cout << "Enter the speed of the first car (km/h): ";
+    cin >> V1;
+
+    cout << "Enter the speed of the second car (km/h): ";
+    cin >> V2;
+    
+    cout << "Enter the initial distance between the cars (km): ";
+    cin >> S;
+
+    cout << "Enter time (hours): ";
+    cin >> T;
+
+    // Calculation of the total distance for both cars
+    double totalDistance = T * (V1 + V2);
+
+    // Calculation of the distance between cars after T hours
+    double distance = abs(S - totalDistance);
+
+    cout << "Distance between cars " << T << "hours: " << distance << "km" << endl;
+
+    return 0;
+}
